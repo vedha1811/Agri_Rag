@@ -77,9 +77,9 @@ LLM_MAP = {
 
 
 BEST_MODELS = [
-    ("cohere-command", llm_cohere),
     ("groq-llama", llm_groq),
     ("cerebras-llama", llm_cerebras),
+    ("cohere-command", llm_cohere),
     ("sarvam-ai", llm_sarvam),
     ("sambanova-llama", llm_sambanova),
 ]
