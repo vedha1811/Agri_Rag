@@ -12,3 +12,4 @@ PyMuPDF
 pytesseract
 pdf2image
 Pillow==12.1.0
+gunicorn
