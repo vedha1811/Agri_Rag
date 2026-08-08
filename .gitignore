@@ -17,6 +17,7 @@ env/
 
 # Local ChromaDB database
 agri_db/
+agri_db.tar.gz
 
 # IDE / editor files
 .vscode/
