@@ -1,4 +1,46 @@
+import os
+import tarfile
+import requests
 import streamlit as st
+
+
+# =========================================================
+# Deployment: Load pre-built ChromaDB
+# =========================================================
+
+DB_PATH = "agri_db"
+
+if not os.path.exists(DB_PATH):
+    st.info("Loading agricultural knowledge base...")
+
+    download_url = (
+        "https://github.com/vedha1811/Agri_Rag/"
+        "releases/download/v1.0.0/agri_db.tar.gz"
+    )
+
+    archive_path = "agri_db.tar.gz"
+
+    response = requests.get(
+        download_url,
+        stream=True,
+        timeout=300
+    )
+    response.raise_for_status()
+
+    with open(archive_path, "wb") as f:
+        for chunk in response.iter_content(
+            chunk_size=1024 * 1024
+        ):
+            if chunk:
+                f.write(chunk)
+
+    with tarfile.open(archive_path, "r:gz") as tar:
+        tar.extractall(".")
+
+    os.remove(archive_path)
+
+    st.success("Knowledge base loaded.")
+
 
 from config import CROP_CHOICES, MODELS, DEFAULT_MODEL
 from retriever import retrieve, normalize_score, collection
