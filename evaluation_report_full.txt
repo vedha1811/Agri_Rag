@@ -1,0 +1,72 @@
+===========================================================================
+  Agricultural RAG System — Complete Evaluation Report
+  Questions evaluated : 48
+  Models evaluated    : 4
+  Metrics             : ROUGE-1/2/L, BLEU-1/2/4, METEOR, Heuristic
+===========================================================================
+
+── NLP METRICS (ROUGE / BLEU / METEOR) ──────────────────────────
+
+Model                                  R-1    R-2    R-L    B-1    B-4    MTR
+----------------------------------------------------------------------
+Groq — LLaMA 3.1 8B                 0.4712 0.3000 0.3558 0.3187 0.1655 0.4650
+Cerebras — LLaMA 3.1 8B             0.4579 0.2878 0.3529 0.3134 0.1618 0.4467
+Cohere — Command-R                  0.3955 0.2140 0.2801 0.2760 0.1160 0.4240
+Sarvam AI — Sarvam-M                0.3025 0.1474 0.2042 0.1838 0.0710 0.3904
+
+── HEURISTIC METRICS ─────────────────────────────────────────────
+
+Model                                 Relev   Compl   Pract     Avg    Time
+---------------------------------------------------------------------------
+Groq — LLaMA 3.1 8B                  0.9688  0.9000  0.7969  0.8885   0.63s
+Cerebras — LLaMA 3.1 8B              0.9792  0.8958  0.7760  0.8837   0.57s
+Cohere — Command-R                   0.9583  0.9458  0.8854  0.9299   5.28s
+Sarvam AI — Sarvam-M                 0.9583  1.0000  0.8177  0.9253   2.98s
+
+── COMBINED RANKING (NLP + Heuristic average) ───────────────────
+
+Rank  Model                                Combined Score  Avg Time
+----------------------------------------------------------------------
+🥇 #1  Groq — LLaMA 3.1 8B                        0.6265     0.63s
+🥈 #2  Cerebras — LLaMA 3.1 8B                    0.6192     0.57s
+🥉 #3  Cohere — Command-R                         0.6169     5.28s
+   #4  Sarvam AI — Sarvam-M                       0.5837     2.98s
+
+===========================================================================
+  🏆 BEST OVERALL  : Groq — LLaMA 3.1 8B
+     Combined Score: 0.6265
+     ROUGE-1       : 0.4712
+     BLEU-4        : 0.1655
+     METEOR        : 0.4650
+
+  ⚡ FASTEST        : Cerebras — LLaMA 3.1 8B (0.57s avg)
+  📊 BEST ROUGE-1   : Groq — LLaMA 3.1 8B (0.4712)
+
+  RECOMMENDATION FOR PROJECT DEMO:
+  Use 'Groq — LLaMA 3.1 8B' as the primary model.
+  Fallback to 'Cerebras — LLaMA 3.1 8B' if speed is critical.
+
+===========================================================================
+  METRIC EXPLANATIONS (for your project report)
+===========================================================================
+
+  ROUGE-1  : Word overlap between generated and reference answer.
+             Higher = more words from reference are in the answer.
+
+  ROUGE-2  : 2-word phrase overlap. Captures local fluency.
+             Higher = answer uses similar phrasing as reference.
+
+  ROUGE-L  : Longest common word sequence match.
+             Higher = answer follows similar word order.
+
+  BLEU-1   : 1-gram precision — are individual words correct?
+  BLEU-2   : 2-gram precision — are word pairs correct?
+  BLEU-4   : 4-gram precision — standard BLEU (most strict).
+             Originally for translation; adapted here for QA.
+
+  METEOR   : Considers synonyms + recall. Best for advisory text.
+             E.g. 'cultivate' ≈ 'grow', 'irrigating' ≈ 'irrigated'
+
+  Note: Scores above 0.3 are considered good for open-domain QA.
+  Agricultural QA typically scores 0.25–0.45 on ROUGE-1.
+===========================================================================

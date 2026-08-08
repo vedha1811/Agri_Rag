@@ -1,0 +1,21 @@
+===========================================================================
+  Agricultural RAG — LLM Evaluation Report
+  Metrics: Relevance | Completeness | Practicality
+===========================================================================
+
+Model                                 Relev    Comp    Prac     Time    Score
+---------------------------------------------------------------------------
+Cohere — Command-R                    1.000   1.000   0.833    8.92s    0.944
+Groq — LLaMA 3.1 8B                   1.000   1.000   0.733    0.70s    0.911
+Cerebras — LLaMA 3.1 8B               1.000   0.930   0.800    0.53s    0.910
+Sarvam AI — Sarvam-M                  0.950   1.000   0.667    2.93s    0.872
+Sambanova — LLaMA 3.1                 0.950   0.810   0.633    2.02s    0.798
+===========================================================================
+
+🏆 WINNER      : Cohere — Command-R
+🥈 RUNNER-UP   : Groq — LLaMA 3.1 8B
+⚡ FASTEST     : Cerebras — LLaMA 3.1 8B
+
+FINAL CHOICE FOR DEMO: Cohere — Command-R
+Reason: Highest combined relevance, completeness, and practical advisory quality.
+===========================================================================

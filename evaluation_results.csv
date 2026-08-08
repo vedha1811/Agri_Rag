@@ -1,0 +1,632 @@
+question,crop,llm,answer,time_s,tokens,relevance,completeness,practicality,avg_score
+When should I sow cotton in India?,cotton,Groq — LLaMA 3.1 8B,"Based on the provided context, the ideal sowing time for cotton in India varies depending on the region. 
+
+- In Karnataka, desi cotton is usually sown in August-September.
+- For regular monsoon conditions, cotton can be sown during September-October.
+- If there is a normal monsoon, crops like cotton can be sown with the onset of the north-east monsoon in September-October.
+
+However, for specific advice, I would recommend sowing cotton in September-October for most regions in India, considering the general guidelines provided.",0.44,113,1.0,1.0,0.6666666666666666,0.889
+When should I sow cotton in India?,cotton,Sambanova — LLaMA 3.1,"The sowing of cotton in India typically takes place at different times depending on the region. 
+
+- In general, for rainfed crops, cotton is planted in September-October, with the possibility of extending sowing up to November.
+- However, in Karnataka, desi cotton is usually sown in August-September.
+- For irrigated conditions, the optimal time for sowing cotton is between 25th June to 8th July.
+
+It's also important to ensure that if there's no germination after seven days of sowing, the gaps should be filled by dibbling cotton seeds, and similarly, gaps should be filled during thinning.",2.45,131,1.0,1.0,1.0,1.0
+When should I sow cotton in India?,cotton,Cohere — Command-R,"Based on the provided context, here is some practical advice for Indian farmers regarding the sowing of cotton:
+
+- For rainfed cotton, the ideal sowing period is September-October. If there is no germination within seven days of sowing, farmers should consider filling the gaps by dibbling cotton seeds. This practice can also be applied during thinning to ensure an adequate crop stand.
+
+- In Karnataka, specifically, desi cotton is typically sown in August-September.
+
+- If farmers are considering double cropping, they can take advantage of the extended monsoon season. Safflower can be sown after sorghum up until October 15th. Beyond that date, chickpea can be an alternative crop option.
+
+- For normal monsoon conditions, crops like sorghum, cotton, pearl millet, pulses, and oilseeds can be sown during the north-east monsoon period, which typically occurs in September-October.
+
+- The specific seed rates and planting patterns for cotton varieties and hybrids are as follows: Varieties - 10 kg/ha seed rate, 60 x 30 cm planting pattern; Hybrids - 3.5 kg/ha seed rate, 90 x 60 cm planting pattern.
+
+- Nutrient management for cotton includes applying 60 kg P2O5, 50 kg K2O, and 10-15 t FYM per hectare.
+
+- It is recommended to complete the sowing of cotton by May 15th to ensure optimal growth and development.
+
+- The first irrigation should be given 4-6 weeks after sowing, depending on the soil type. The last irrigation in September is crucial for the crop's success.
+
+- To avoid the simultaneous build-up and spread of pests and diseases, it is advisable to refrain from growing bhindi (okra), moong (mung bean), arhar",7.31,400.0,1.0,1.0,1.0,1.0
+When should I sow cotton in India?,cotton,Sarvam AI — Sarvam-M,"<think>
+Okay, the user is asking when to sow cotton in India. Let me check the provided context.
+
+Looking at the first source (Page 68), it mentions that cotton is planted in September-October. But in Karnataka, desi cotton is sown in August-September. Another source (Page 64) says that during normal monsoon conditions, crops like cotton can be sown with the onset of the northeast monsoon in September-October. Also, Page 56 mentions sowing dates as 25th June to 8th July, but that seems conflicting. Wait, no, Page 56 is about another crop maybe? Let me check again. Oh, no, Page 56 is part of the same document but under a different section. Wait, the user's context includes multiple sources. Let me verify each source again.
+
+First source (Page 68): September-October for general, August-September in Karnataka. Second source (Page 54) talks about safflower and chickpea after sorghum, but not directly about cotton sowing dates. Third source (Page 64) mentions September-October for cotton. Page 56 seems to be about another crop's planting dates (June-July), but the document title is about cotton, so maybe it's a different crop. Wait, the document is ""Districtwise Promising Technologies for Rainfed Cotton.pdf"", so maybe Page 56 is about cotton. Let me check the content again. Page 56 says ""Seed rate: Varieties: 10 kg/ha; Hybrids: 3.5 kg/ha Date of sowing: 25th June to 8th July"". Wait, that's conflicting with other sources. But the user's context might have mixed sources. Wait, the user provided multiple sources, including ""pp_kharif.pdf, Page 5",2.91,400,1.0,1.0,1.0,1.0
+When should I sow cotton in India?,cotton,Cerebras — LLaMA 3.1 8B,"Based on the given context, the sowing of cotton in India can vary depending on the region. 
+
+- In Karnataka, desi cotton is usually sown in August-September.
+- In general, cotton is planted in September-October.
+- However, for specific regions with regular monsoon conditions, cotton can be sown along with other crops like sorghum in September.
+
+So, the best time to sow cotton in India would be in September, considering the general conditions. However, for specific regions like Karnataka, it would be August-September.",0.47,112,1.0,1.0,0.6666666666666666,0.889
+How to treat blast disease in rice?,rice,Groq — LLaMA 3.1 8B,"To treat blast disease in rice, follow these steps:
+
+1. **Timing:** Spray fungicides at the boot stage of the crop.
+2. **Fungicide:** Use Epic 75 WG (hexaconazole) at a rate of 26.8 g in 200 litres of water per acre.
+3. **Number of Sprays:** Give two sprays, 15 days apart.
+4. **Precaution:** Before sowing, treat the seed with Sprint 75 WS (carbendazim + mancozeb) by making a slurry of 3 g fungicide formulation in 10 ml water for one kg seed to manage other seed-borne diseases of rice.
+
+This will help manage the blast disease in rice effectively.",0.59,154,1.0,1.0,1.0,1.0
+How to treat blast disease in rice?,rice,Sambanova — LLaMA 3.1,"For effective management of neck blast, spray the fungicides at boot stage. Additionally, give two sprays of 26.8 g Epic 75 WG (hexaconazole) in 200 litres of water per acre, with the first spray at boot stage and the second 15 days afterwards.",2.78,60,0.5,0.7,1.0,0.733
+How to treat blast disease in rice?,rice,Cohere — Command-R,"To treat blast disease in rice, farmers should focus on implementing an integrated pest management (IPM) approach. Here are some practical steps to manage blast disease:
+
+1. Monitor Rice Fields Regularly: Conduct frequent inspections of your rice fields to identify the presence of blast disease. Look for symptoms such as leaf lesions, neck blast, and sheath blight. Early detection is crucial for effective management.
+
+2. Apply Fungicides at Boot Stage: As mentioned in the context, it is recommended to spray fungicides at the boot stage of rice growth. This stage refers to when the rice plant's flag leaf sheath begins to expand and the panicle (flower head) is enclosed. Apply the fungicide Epic 75 WG (hexaconazole) at a rate of 26.8 g per 200 liters of water per acre. This application will help control the disease and protect the rice plants.
+
+3. Follow-Up Spray: After the initial application at the boot stage, a second spray of Epic 75 WG is recommended 15 days later. This follow-up spray ensures continued protection against blast disease and helps prevent its spread.
+
+4. Use Disease-Free Seed: To prevent the introduction and spread of blast disease, it is essential to use high-quality, disease-free seed for sowing. Treat the seed with a fungicide like Sprint 75 WS (carbendazim + mancozeb) before sowing. This treatment will help manage seed-borne diseases and reduce the risk of blast infection.
+
+5. Timely Transplanting: The timing of transplanting is critical for rice production. Follow the recommended transplanting time for your specific rice variety to ensure optimal growth and yield. Delayed transplanting can increase the risk of blast disease, so adhering to the suggested schedule is important.
+
+6. Manage Water and Nutrients: Maintain proper water management in rice fields, as excessive moisture can favor the development of blast",7.52,400.0,1.0,1.0,1.0,1.0
+How to treat blast disease in rice?,rice,Sarvam AI — Sarvam-M,"<think>
+Okay, let's tackle this question about treating blast disease in rice. The user is asking for practical advice based on the provided context.
+
+First, I need to go through each source mentioned in the context to find relevant information. The user mentioned sources like pp_kharif.pdf, NIPHM, and ANGRAU_Technologies. 
+
+Looking at pp_kharif.pdf, Page 30 talks about threshing and mentions monitoring insect-pests with Economic Threshold Levels. It also says to spray fungicides at the boot stage for neck blast. That's a key point. Then, Page 26 discusses using Epic 75 WG (hexaconazole) in two sprays at boot stage and 15 days later. Page 29 mentions treating seeds with Sprint 75 WS (carbendazim + mancozeb) before sowing. 
+
+The NIPHM source (Page 50) lists symptoms of diseases like Leaf Blast, which is part of blast disease. The ANGRAU document (Page 50) mentions disease management in rice but doesn't specify blast here.
+
+So, the main treatments are fungicide sprays. The boot stage is critical. Hexaconazole (Epic 75 WG) is applied in two sprays. Also, seed treatment with Sprint 75 WS. Timing is boot stage and 15 days later. Quantities: 26.8g per acre in 200L water. Seed treatment is 3g in 10ml water per kg seed.
+
+I need to structure the answer with crop name (rice), disease (blast), treatment (fungicides), timing (boot stage and 15 days later), and quantities. Also mention seed treatment. Make sure to reference the sources correctly. Don't include anything not in the context. Check if all info is covered. Yes, the answer should be clear",2.95,400,1.0,1.0,1.0,1.0
+How to treat blast disease in rice?,rice,Cerebras — LLaMA 3.1 8B,"To treat blast disease in rice, follow these steps:
+
+1. **Timing:** Spray fungicides at the boot stage. This is when the disease is most susceptible to control.
+2. **Fungicide:** Use Epic 75 WG (hexaconazole) at a rate of 26.8 g in 200 litres of water per acre. Apply two sprays, 15 days apart.
+3. **Precaution:** Before sowing, treat the seed with Sprint 75 WS (carbendazim + mancozeb) by making a slurry of 3 g fungicide formulation in 10 ml water for one kg seed to manage other seed-borne diseases.
+
+**Note:** Regular monitoring of the crop for symptoms of blast disease is crucial to prevent the disease from spreading.",0.45,163,1.0,1.0,1.0,1.0
+What is the fertilizer dose for wheat?,wheat,Groq — LLaMA 3.1 8B,"Based on the context, the fertilizer dose for wheat is not explicitly mentioned in the provided sources. However, we can infer some information.
+
+From pp_kharif.pdf, Page 144, it is mentioned that for wheat, fertigation of 80% recommended dose of NPK is applied. However, the exact dose is not specified.
+
+From pp_rabi.pdf, Page 51, it is mentioned that for wheat intercropped in autumn sugarcane, weed control is discussed, but there is no information on fertilizer dose.
+
+From pp_kharif.pdf, Page 79, it is mentioned that for soybean (which follows wheat), the fertilizer dose is 12.5 kg of N (28 kg of Urea) and 24 kg of P2O5 (150 kg of single superphosphate) per acre.
+
+Since the fertilizer dose for wheat is not explicitly mentioned, I would recommend checking the soil test report and adjusting the fertilizer dose accordingly. If the soil test phosphorus level is more than 16 kg per acre, there is no need to add any phosphorus fertilizer to the wheat crop.
+
+Therefore, I would suggest applying 12.5 kg of N (28 kg of Urea) at sowing, and then applying the remaining 1/3 dose of N in two equal splits at the end of March and the end of April, as mentioned in pp_rabi.pdf, Page 51.
+
+However, please note that this is an inference based on the provided context, and it is recommended to consult with a soil expert or a fertilizer specialist for a more accurate and personalized recommendation.",1.1,327,1.0,1.0,1.0,1.0
+What is the fertilizer dose for wheat?,wheat,Sambanova — LLaMA 3.1,"The fertilizer dose for wheat is not explicitly stated in the provided context. However, it can be inferred from the information given for other crops and cropping systems.
+
+For maize-wheat cropping system, when soil test phosphorus level is more than 16 kg per acre, there is no need to add any phosphorus fertilizer to both the crops.
+
+For wheat, it is mentioned that if the recommended dose of phosphorus has been applied to the preceding wheat, then the application of phosphorus can be omitted for the next crop.
+
+It is also mentioned that apply urea in three equal doses, 1/3 dose of N should be applied at planting, 1/3 at the end of March and the remaining 1/3 by the end of April.
+
+Additionally, for fertigation in wheat, apply 80 % recommended dose of NPK, but the exact dose is not specified.
+
+Therefore, the exact fertilizer dose for wheat cannot be determined from the provided context.",2.42,194,1.0,1.0,1.0,1.0
+What is the fertilizer dose for wheat?,wheat,Cohere — Command-R,"For wheat, the fertilizer dose recommendations vary based on the preceding crop and soil conditions. Here are the practical steps and quantities:
+
+1. If wheat follows a crop like maize where sufficient phosphorus (P) has been applied, there is no need to add additional P fertilizer. This is especially true if the soil test phosphorus level is above 16 kg per acre.
+
+2. For wheat sown after wheat or other crops where phosphorus was not adequately applied, the recommended dose is as follows:
+   - Apply 12 kg of P2O5 (75 kg of single superphosphate) per acre at the time of sowing.
+   - If the preceding wheat crop received the recommended dose of phosphorus, omit the application of phosphorus for the current wheat crop.
+
+3. As for nitrogen (N), the application should be done in three equal doses:
+   - Apply 1/3 of the total N dose (urea) at planting.
+   - Apply the second 1/3 dose at the end of March.
+   - Apply the remaining 1/3 dose by the end of April.
+
+4. Regarding irrigation, the crop requires 3-4 irrigations during the summer period if sown for green manure. For wheat specifically, apply subsurface drip irrigation at 7-day intervals until mid-February, and then at 5-day intervals thereafter.
+
+5. It is also recommended to use bio-fertilizers. Inoculate the wheat seed with the recommended bio-fertilizer before sowing.
+
+These steps and quantities should be followed to ensure optimal growth and yield for wheat crops. It is important to consider the specific conditions of each farm and adjust the fertilizer doses accordingly.",11.37,348.0,1.0,1.0,1.0,1.0
+What is the fertilizer dose for wheat?,wheat,Sarvam AI — Sarvam-M,"<think>
+Okay, let's tackle this question about the fertilizer dose for wheat. The user is asking specifically for wheat, so I need to go through the provided context and find all mentions of wheat and their associated fertilizer recommendations.
+
+First, looking at the sources. The context includes pp_kharif.pdf and pp_rabi.pdf. Since wheat is a rabi crop, I should focus more on pp_rabi.pdf. Let me check the pages mentioned.
+
+In pp_rabi.pdf, Page 111 talks about phosphorus in maize-wheat systems. It mentions that if soil test phosphorus is over 16 kg/acre, no phosphorus is needed for both crops. But that's about phosphorus specifically, not the full fertilizer dose.
+
+Page 51 of pp_rabi.pdf discusses applying urea in three equal doses for wheat. It says 1/3 at planting, 1/3 end of March, and 1/3 end of April. But this is only about nitrogen (urea). The user is asking for the overall fertilizer dose, which includes NPK.
+
+Looking at pp_kharif.pdf, Page 144 mentions fertigation for wheat with 80% of recommended NPK dose. It also talks about applying 1/5 dose at sowing and the rest in splits. However, this seems to be for maize and wheat in a specific context, maybe under drip irrigation. But the exact quantities aren't given here.
+
+Page 124 of pp_kharif.pdf mentions 12 kg P2O5 (75 kg SSP) per acre at sowing for a green manure crop, but that's not directly about wheat.
+
+Page 79 of pp_kharif.pdf discusses soybean, not wheat.
+
+So, the main info for wheat's fertilizer is in pp_rabi.pdf Page 51 for nitrogen (urea) and Page 111 for phosphorus considerations. However, the user is",3.08,400,1.0,1.0,1.0,1.0
+What is the fertilizer dose for wheat?,wheat,Cerebras — LLaMA 3.1 8B,"Based on the given context, the fertilizer dose for wheat is not explicitly mentioned. However, we can infer the following information:
+
+- In maize-wheat cropping system, when soil test phosphorus level is more than 16 kg per acre, there is no need to add any phosphorus fertilizer to both the crops. (Source: pp_rabi.pdf, Page 111)
+- For wheat, a general fertilizer recommendation is not provided, but for maize, 80% of the recommended dose of NPK is applied through fertigation. (Source: pp_kharif.pdf, Page 144)
+- For soybean, which follows wheat, the phosphorus dose is reduced to 24 kg of P2O5 (150 kg of single superphosphate) per acre if wheat had received the recommended dose of phosphorus. (Source: pp_kharif.pdf, Page 79)
+
+However, for wheat specifically, the context does not provide a clear fertilizer dose.",0.48,196,1.0,1.0,1.0,1.0
+What pests affect brinjal crops?,brinjal,Groq — LLaMA 3.1 8B,"Based on the provided context, the following pests affect brinjal crops:
+
+1. **Fruit and shoot borer: Leucinodes orbonalis Guenee** (Lepidoptera: Pyralidae)
+2. **Jassids: Amrasca biguttula biguttula Ishida** (Homoptera: Cicadellidae)
+3. **Epilachna (Hadda) beetle: Epilachna vigintioctopunctata Fabricius** (Coleoptera: Coccinellidae)
+4. **Brinjal lace bug**
+5. **Brinjal leaf roller and leaf webber**
+
+These pests can be managed using various methods, including crop rotation, biological control (e.g., using natural enemies like lady beetle larvae and adults, spiders, and shield-shaped soldier bugs), and chemical control (e.g., applying phorate 10% CG @ 6000 g/acre).",0.69,194,1.0,1.0,0.6666666666666666,0.889
+What pests affect brinjal crops?,brinjal,Sambanova — LLaMA 3.1,"The pests that affect brinjal crops include:
+
+1. Fruit and shoot borer (Leucinodes orbonalis Guenee)
+2. Jassids (Amrasca biguttula biguttula Ishida)
+3. Epilachna (Hadda) beetle (Epilachna vigintioctopunctata Fabricius)
+4. Brinjal lace bug
+5. Brinjal leaf roller and leaf webber 
+
+These pests can cause significant damage to brinjal crops and need to be managed effectively through Integrated Pest Management (IPM) strategies.",1.71,121,1.0,0.7,0.0,0.567
+What pests affect brinjal crops?,brinjal,Cohere — Command-R,"The pests that affect brinjal (eggplant) crops include:
+
+- Fruit and shoot borer (Leucinodes orbonalis)
+- Jassids (Amrasca biguttula biguttula)
+- Epilachna beetle (Epilachna vigintioctopunctata)
+- Brinjal lace bug
+- Brinjal leaf roller and leaf webber
+
+To manage these pests, farmers can employ an Integrated Pest Management (IPM) approach, which includes the following strategies:
+
+- Crop rotation: Rotating brinjal crops with non-host plants can help disrupt pest cycles and reduce their population.
+
+- Natural enemies: Encourage and support the presence of natural enemies such as parasitoids (e.g., Trichogramma chilonis, Pseudoperichaeta sp.), predators (e.g., lady beetles, spiders), and pathogens that can help control pest populations. Planting flowering plants that attract these natural enemies can be beneficial.
+
+- Pheromone traps: Surveillance through pheromone trap catches can help monitor and detect the presence of brinjal shoot and fruit borer pests. This allows for timely intervention and pest management strategies.
+
+- Chemical control: In some cases, when pest populations are high and other methods are insufficient, farmers can consider using chemical pesticides. For brinjal lace bugs, the application of phorate 10% CG @ 6000 g/acre is recommended. However, it is important to follow the recommended dosages and timings to avoid any adverse effects on the crop and the environment.
+
+- Field scouting and monitoring: Regular field scouting and monitoring of the crop can help identify pest infestations early on. This allows for prompt action and the implementation of appropriate control measures.
+
+It is crucial to follow the recommended timing and quantities for any chemical applications and to consider the specific conditions and regulations in your region. Additionally, adopting sustainable and eco",6.98,400.0,1.0,1.0,0.3333333333333333,0.778
+What pests affect brinjal crops?,brinjal,Sarvam AI — Sarvam-M,"<think>
+Okay, let's tackle this question. The user is asking about the pests that affect brinjal crops. I need to refer to the provided context from the Brinjal.pdf.
+
+First, looking at the context, Page 8 lists pests of national significance under insects and mites. There are four main pests mentioned: Fruit and shoot borer (Leucinodes orbonalis), Jassids (Amrasca biguttula biguttula), Epilachna beetle (Epilachna vigintioctopunctata), and Brinjal lace bug (mentioned on Page 35). 
+
+Page 35 also mentions Brinjal lace bug and Brinjal leaf roller and leaf webber. So those are additional pests. The user's question is specifically about pests, so I should list all the ones mentioned in the context. 
+
+I need to present each pest with their scientific names and common names if available. Also, check if there are any other pests mentioned elsewhere. Page 13 talks about natural enemies, which are predators and parasitoids, but those are not pests. Page 6 mentions pests of national and regional significance, but the specific pests are listed on Page 8 and 35. 
+
+So compiling the list: Fruit and shoot borer, Jassids, Epilachna beetle, Brinjal lace bug, Brinjal leaf roller, and Brinjal leaf webber. The answer should list these with their scientific names and common names as per the context. Make sure not to include diseases or other categories unless specified. The user didn't ask for diseases, so focus on the pests mentioned.
+</think>
+
+**Pests affecting brinjal crops (based on context):**  
+
+1. **Fruit and Shoot Borer** (*Leucinodes orbonalis*)  
+   - **Treatment**: Not explicitly specified in the context.  
+   - **",2.91,400,1.0,1.0,0.3333333333333333,0.778
+What pests affect brinjal crops?,brinjal,Cerebras — LLaMA 3.1 8B,"Based on the provided context, the following pests affect brinjal crops:
+
+1. **Fruit and shoot borer: Leucinodes orbonalis Guenee** (Lepidoptera: Pyralidae)
+2. **Jassids: Amrasca biguttula biguttula Ishida** (Homoptera: Cicadellidae)
+3. **Epilachna (Hadda) beetle: Epilachna vigintioctopunctata Fabricius** (Coleoptera: Coccinellidae)
+4. **Brinjal lace bug**
+5. **Brinjal leaf roller and leaf webber**
+
+These pests can be managed using the following methods:
+
+- Crop rotation
+- Applying phorate 10% CG @ 6000 g/acre
+- Encouraging natural enemies such as lady beetle larvae and adults, spiders, and shield-shaped soldier bugs.
+
+Please note that the context does not provide detailed information on the management of these pests, so further research or consultation with experts may be necessary for effective management.",0.49,218,1.0,1.0,0.6666666666666666,0.889
+How to manage irrigation for groundnut?,groundnut,Groq — LLaMA 3.1 8B,"Based on the provided context, I will provide practical advice on managing irrigation for groundnut.
+
+**Irrigation for Groundnut:**
+
+Groundnut is a drought-tolerant crop, but it requires adequate moisture, especially during the flowering and pod formation stages. For successful cultivation, ensure the following:
+
+1. **Soil Type:** Groundnut grows well in well-drained sandy soils overlaying a loamy sub-soil. If irrigation facilities are available, loamy sand and loamy soils can also be used.
+2. **Irrigation Schedule:** Groundnut requires about 400-500 mm of water during the growing season. Apply irrigation at the following stages:
+	* Sowing: 1-2 irrigations after sowing, depending on soil moisture.
+	* Germination: 1-2 irrigations after germination, depending on soil moisture.
+	* Flowering and Pod Formation: 2-3 irrigations at 15-20 day intervals.
+	* Maturation: 1-2 irrigations at 10-15 day intervals.
+3. **Water Application:** Apply water at a rate of 2-3 cm per irrigation, depending on soil type and moisture levels.
+4. **Avoid Over-Irrigation:** Avoid over-irrigation, which can lead to waterlogging and root rot.
+5. **Monitor Soil Moisture:** Regularly monitor soil moisture levels to determine the need for irrigation.
+
+**Additional Tips:**
+
+* Avoid irrigating during strong winds or hot sunny days to prevent water loss through evaporation.
+* Use a drip irrigation system or sprinkler irrigation to conserve water and reduce soil erosion.
+* Apply gypsum at a rate of 50 kg per acre to improve soil structure and water-holding capacity.
+
+By following these guidelines, you can manage irrigation effectively for groundnut and ensure a successful crop.",0.96,375,1.0,1.0,1.0,1.0
+How to manage irrigation for groundnut?,groundnut,Sambanova — LLaMA 3.1,"The context provided does not specifically discuss how to manage irrigation for groundnut. However, it mentions that where irrigation facilities are available, loamy sand and loamy soil can also be put under groundnut, and that two hand hoeings, one before first irrigation and second after first irrigation, can be used for weed control. 
+
+Therefore, the answer would be: Irrigation facilities should be utilized when available, with hoeings done before and after the first irrigation for weed control, but the exact details of irrigation management are not specified in the given context.",1.97,111,1.0,1.0,0.3333333333333333,0.778
+How to manage irrigation for groundnut?,groundnut,Cohere — Command-R,"To manage irrigation for groundnut (peanut) cultivation, follow these practical steps:
+
+1. Soil Type and Preparation:
+   - Groundnut thrives in well-drained sandy soil with a loamy subsoil. If irrigation facilities are available, loamy sand or loamy soil can also be used.
+   - Deep ploughing should be done on bright sunny days during May and June to prepare the field.
+
+2. Irrigation Scheduling:
+   - Groundnut is a rainfed crop, but irrigation is essential for successful cultivation.
+   - Depending on the soil type and moisture retention, irrigation intervals can vary. As a general guideline, groundnut requires irrigation at the following stages:
+     - Pre-sowing irrigation: Apply water to prepare the seedbed and ensure adequate moisture for germination.
+     - Critical stages: Groundnut requires irrigation during critical growth stages, such as flowering and pod development. These stages typically occur around 30-40 days after sowing.
+     - Post-harvest irrigation: If the soil moisture is low, provide irrigation after harvesting to maintain soil moisture for the next crop.
+
+3. Irrigation Methods:
+   - Furrow irrigation: This method is suitable for groundnut cultivation. Create furrows or ridges in the field, and apply water to these furrows. Ensure that the water reaches the root zone of the plants.
+   - Sprinkler or drip irrigation: These methods can be used if water availability is limited or to ensure precise water application.
+
+4. Irrigation Timing:
+   - Avoid irrigating on hot sunny days or during strong windy conditions.
+   - Morning or evening irrigation is preferable to minimize water loss due to evaporation.
+   - Monitor the soil moisture regularly and adjust irrigation intervals based on the crop's water requirements and soil moisture levels.
+
+5. Weed Control:
+   - Weeds can be controlled by two hand hoeings, one before the first irrigation and the second after the first irrigation.
+   - Alternatively, use appropriate herbicides or mechanical",7.01,400.0,1.0,1.0,1.0,1.0
+How to manage irrigation for groundnut?,groundnut,Sarvam AI — Sarvam-M,"<think>
+Okay, let's tackle this question about managing irrigation for groundnut. The user is asking for advice based on the provided context. First, I need to go through each of the context sources to find any mentions of irrigation related to groundnut.
+
+Looking at the first source (pp_rabi.pdf, Page 21), it talks about gypsum application but mentions that if irrigation is available, certain soil types can be used. The second source (Groundnut.pdf, Page 40) discusses IPM but doesn't mention irrigation. The third source (pp_kharif.pdf, Page 99) states that under rainfed conditions, a well-drained sandy soil is ideal, and where irrigation is available, loamy sand and loamy soils can be used. It also mentions rotation crops but doesn't give irrigation specifics. The other sources (Groundnut.pdf, Pages 52 and 17) focus on pest management and don't mention irrigation.
+
+So, the main points from the context are that irrigation is an option when available, and the soil types suitable for irrigated conditions. However, there's no detailed information on how to manage irrigation, like timing, frequency, or methods. The context doesn't provide specifics on irrigation scheduling or techniques beyond mentioning the soil types. Therefore, based on the given context, there's insufficient information to answer the question comprehensively. The answer should state that the context doesn't have enough details on irrigation management for groundnut.
+</think>
+
+I don't have enough information on this topic. The context mentions soil types suitable for rainfed groundnut cultivation and notes that irrigation facilities can be used where available, but it does not provide specific details about irrigation management practices (e.g., frequency, duration, or methods).",2.91,359,1.0,1.0,0.3333333333333333,0.778
+How to manage irrigation for groundnut?,groundnut,Cerebras — LLaMA 3.1 8B,"Based on the provided context, I don't have enough information on the specific irrigation management for groundnut. However, I can suggest some general guidelines for irrigation management in groundnut cultivation.
+
+Groundnut is a drought-tolerant crop, but it requires adequate moisture, especially during the flowering and pod formation stages. The ideal time for irrigation is when the top 15-20 cm of soil is dry to the touch.
+
+For rainfed conditions, the ideal soil type for groundnut cultivation is a well-drained sandy soil overlaying a loamy sub-soil (Source: pp_kharif.pdf, Page 99). However, if irrigation facilities are available, loamy sand and loamy soil can also be used.
+
+To manage irrigation effectively, I would recommend the following steps:
+
+1. **Soil Moisture Monitoring**: Regularly check the soil moisture by inserting a stick or a finger into the soil up to a depth of 15-20 cm. If the soil feels dry, it's time to irrigate.
+2. **Irrigation Timing**: Irrigate the crop when the top 15-20 cm of soil is dry to the touch. This is usually during the flowering and pod formation stages.
+3. **Water Application**: Apply water at a rate of 4-6 inches (10-15 cm) per irrigation. This can be achieved by using a drip irrigation system or a sprinkler irrigation system.
+4. **Frequency**: Irrigate the crop every 7-10 days, depending on the weather conditions and soil type.
+
+Please note that these are general guidelines, and the specific irrigation requirements may vary depending on the location, soil type, and weather conditions. It's always best to consult with a local agricultural expert or a soil scientist for more specific advice.
+
+Additionally, it's essential to note that the recommended dose of gypsum for groundnut is 50 kg per acre, which can be applied to the soil to improve its fertility and structure (Source: pp",0.7,400,1.0,1.0,1.0,1.0
+What are symptoms of yellowing in maize?,maize,Groq — LLaMA 3.1 8B,"Based on the provided context, I don't have enough information on the symptoms of yellowing in maize. However, I can suggest that yellowing in maize can be caused by various factors such as nutrient deficiency, disease, or pest infestation.
+
+Given the context, it seems that yellowing in maize might be related to diseases such as yellow rust, which is mentioned in the context. Yellow rust is a fungal disease that can cause yellowing of the leaves and other symptoms.
+
+To control yellow rust, the context suggests spraying the crop with 200 ml per acre Ampect Xtra 25.5 SC (azoxystobin+cyproconazole) as soon as the disease is noticed.
+
+If you suspect yellow rust or any other disease in your maize crop, I recommend consulting a local agricultural expert or conducting a thorough examination of the crop to determine the cause of the yellowing.",0.58,180,1.0,1.0,0.3333333333333333,0.778
+What are symptoms of yellowing in maize?,maize,Sambanova — LLaMA 3.1,"The provided context does not explicitly mention the symptoms of yellowing in maize. However, it does mention ""yellow rust"" as a disease that can be controlled by spraying Ampect Xtra 25.5 SC (azoxystobin+cyproconazole) as soon as the disease is noticed. Additionally, it mentions ""polysora rust"" and ""yellow stem borer"" as pests that the maize hybrid has moderate resistance to. But the symptoms of yellowing are not specified.",1.62,100,1.0,0.7,0.3333333333333333,0.678
+What are symptoms of yellowing in maize?,maize,Cohere — Command-R,"I don't have enough information on this topic to provide a comprehensive answer. However, based on the context provided, I can offer some general advice regarding the symptoms of yellowing in maize. 
+
+Yellowing in maize can be an indication of various issues, including nutrient deficiencies, pest infestations, or diseases. Here are some practical steps and observations to consider:
+
+1. Nutrient Deficiency: Yellowing leaves in maize can sometimes be a sign of nitrogen deficiency. Ensure that the soil has adequate nitrogen levels by conducting regular soil tests and applying appropriate fertilizers as needed. 
+
+2. Pest Infestation: The context mentions the yellow stem borer as a pest that affects maize. Infestation by this pest can lead to yellowing of leaves and stems. To control yellow stem borer, farmers can use natural enemies such as parasitoids, predators, and pathogens. The P: D ratios provided in the context can guide farmers in determining the severity of the pest population and the appropriate control measures. 
+
+3. Disease: Yellow rust is a disease mentioned in the context, and it can cause yellowing of maize leaves. To control yellow rust, farmers are advised to spray the crop with Ampect Xtra 25.5 SC (azoxystobin + cyproconazole) at a rate of 200 ml per acre as soon as the disease is noticed. 
+
+It is important to regularly monitor the maize crop for any signs of yellowing and take prompt action to identify and address the underlying cause. This may involve further investigation, seeking expert advice, and implementing appropriate control measures to ensure the health and productivity of the maize crop.",5.65,334.0,1.0,1.0,0.6666666666666666,0.889
+What are symptoms of yellowing in maize?,maize,Sarvam AI — Sarvam-M,"<think>
+Okay, let's tackle this question about the symptoms of yellowing in maize. The user is asking for the symptoms, so I need to look through the provided context to find any mentions of yellowing in maize.
+
+First, I'll go through each source one by one. 
+
+Starting with pp_rabi.pdf, page 8. It mentions pink stem borer control with EC (chlorpyriphos) and yellow rust treatment with Ampect Xtra. But there's no mention of symptoms of yellowing here.
+
+Next, Maize.pdf, page 17. It talks about yellow stem borer and natural enemies. Still, no symptoms of yellowing.
+
+IPMMaizeBulletin.pdf, page 17. Similar to the previous Maize.pdf, discussing yellow stem borer and natural enemies. No symptoms listed.
+
+AGRICULTURE.pdf, page 116. This describes a maize variety with disease resistance, including resistance to diseases like MLB, TLB, RDM, DM, and moderate resistance to others. It mentions the grains are orange-yellow, but that's about the color, not symptoms of yellowing.
+
+Maize.pdf, page 10. The contents list diseases and cyst nematode, but no details on symptoms here.
+
+Looking through all the sources, there's no direct mention of symptoms of yellowing in maize. The context provided discusses treatments for diseases like yellow rust and pests like stem borers, but not the specific symptoms of yellowing. The closest is the mention of grains being orange-yellow in color, but that's a characteristic of the variety, not a symptom of a disease or issue causing yellowing.
+
+Since the context doesn't provide information on the symptoms of yellowing in maize, the correct response is to state that there's not enough information available in the provided sources.
+</think>
+
+I don't have enough information on this topic.",2.88,387,1.0,1.0,0.3333333333333333,0.778
+What are symptoms of yellowing in maize?,maize,Cerebras — LLaMA 3.1 8B,"I don't have enough information on this topic in the given context. However, I can suggest that yellowing in maize can be a symptom of several diseases, including yellow rust, which is mentioned in the context as a disease that can be controlled by spraying Ampect Xtra 25.5 SC.
+
+If you are experiencing yellowing in your maize crop, I would recommend inspecting the crop for any signs of disease or pests, and then taking action based on the specific issue you identify. If you are unsure, it may be helpful to consult with a local agricultural expert or conduct further research on the specific symptoms you are observing.
+
+In terms of practical advice, if you suspect yellow rust, you can follow the instructions in the context for controlling the disease by spraying Ampect Xtra 25.5 SC as soon as the disease is noticed.",0.43,171,1.0,1.0,0.3333333333333333,0.778
+How to control leaf curl virus in chilli?,chilli,Groq — LLaMA 3.1 8B,"Based on the provided context, it seems that the leaf curl virus in chilli is caused by the Tomato Mosaic Virus (TMV). To control this disease, I recommend the following steps:
+
+**Crop Name:** Chilli
+**Quantity:** Not specified, but it's essential to use the recommended quantities of the chemicals mentioned below.
+**Timing:** Early removal of affected plants and use of healthy pathogen-free chilli seeds.
+**Steps:**
+
+1. **Use healthy pathogen-free chilli seeds:** This is the key control measure to manage the disease. Use certified disease-free seeds to reduce the risk of TMV infection.
+2. **Early removal of affected plants:** Remove and destroy any affected plants to prevent the spread of the disease.
+3. **Transplants should be kept clean:** Keep the transplants clean by removing any infected leaves or debris.
+4. **Chemical control (if necessary):** If the disease is severe, you can use captan 75% WP at a rate of 800 g in 400 l of water per acre. However, this should be used as a last resort and only after consulting with a local agricultural expert.
+
+**Additional Tips:**
+
+* Practice good agricultural practices, such as crop rotation and sanitation, to reduce the risk of disease spread.
+* Monitor your plants regularly for any signs of disease and take action promptly if you notice any symptoms.
+* Consider using biological control methods, such as introducing natural predators of the virus, to manage the disease.
+
+I hope this helps you control the leaf curl virus in your chilli crop!",0.95,319,1.0,1.0,0.3333333333333333,0.778
+How to control leaf curl virus in chilli?,chilli,Sambanova — LLaMA 3.1,"The provided context does not specifically mention ""leaf curl virus"" but describes symptoms similar to leaf curl, such as downward curling of leaves, which can be caused by various factors including Chilli mite (Polyphagotarsonemus latus) and possibly TMV (tobacco mosaic virus). However, for management and control of diseases and pests causing such symptoms, the following general measures are suggested:
+
+1. **Use healthy pathogen-free chilli seed** to prevent the spread of diseases.
+2. **Early removal of affected plants** to control the spread of diseases.
+3. **Production of pathogen-free planting materials** is key to managing diseases.
+4. **Spray captan 75% WP @ 800 g in 400 l of water/acre** for chemical control, though this is specifically mentioned for die back and fruit rot, it indicates the use of fungicides for disease control.
+5. **Refer to specific management pages** mentioned in the context for detailed control measures against chilli mite and other pests that might cause similar symptoms.
+
+Since the question specifically asks about ""leaf curl virus"" and the context does not directly address this, it's essential to consult the referenced pages for management or consider the above general disease and pest management strategies.",2.23,259,1.0,1.0,0.6666666666666666,0.889
+How to control leaf curl virus in chilli?,chilli,Cohere — Command-R,"To control the leaf curl virus in chilli, farmers can follow these practical steps:
+
+1. Chemical Control: Spray captan 75% WP at a rate of 800 grams per 400 liters of water per acre. This will help manage the disease and reduce the impact of the virus.
+
+2. Cultural Control:
+   - Use healthy, pathogen-free chilli seeds for planting. This is crucial to prevent the introduction and spread of the virus.
+   - Regularly inspect and remove any affected plants showing symptoms of the leaf curl virus. Early removal helps control the disease's spread.
+   - Maintain clean and healthy transplants by following good agricultural practices.
+
+3. Integrated Pest Management:
+   - Encourage natural predators of pests like aphids and chilli mites, which can transmit the virus. Predators can help keep pest populations in check.
+   - Monitor the crop regularly for any signs of infestation or disease symptoms. Early detection allows for prompt action.
+
+4. Timing:
+   - Start implementing these control measures as soon as the first signs of the leaf curl virus are observed. Prompt action is essential to prevent further spread and minimize yield losses.
+   - Continue regular monitoring and follow-up treatments as needed throughout the growing season.
+
+5. Crop Management:
+   - Ensure proper irrigation and nutrient management to maintain plant health and vigor. Healthy plants are better equipped to resist diseases.
+   - Practice crop rotation and avoid planting chillies in the same field consecutively to reduce the buildup of pathogens.
+
+By combining these strategies, farmers can effectively manage the leaf curl virus in chilli and minimize its impact on their crop. It is important to act promptly and consistently to control the disease and protect the yield.",16.12,345.0,1.0,1.0,1.0,1.0
+How to control leaf curl virus in chilli?,chilli,Sarvam AI — Sarvam-M,"<think>
+Okay, let's tackle this question about controlling leaf curl virus in chilli. First, I need to check the provided context to see what information is available.
+
+Looking at the context, there are mentions of diseases and pests affecting chilli. The user is asking about leaf curl virus, which I need to connect to the symptoms described. 
+
+In the context, under Chilli.pdf Page 67, there's a mention of mosaic symptoms, chlorosis, downward curling, and distorted fruit. The disease is linked to TMV (Tobacco Mosaic Virus), which is seed-borne. The survival and spread part says it's primarily spread through externally seed-borne virus particles. So, the virus is likely the one causing the leaf curl here.
+
+Now, for management. The context on Page 34 talks about chemical control using captan 75% WP at 800g per acre in 400 liters of water. But that's under ""Die back and fruit rot,"" which might be a different disease. Wait, the user is asking about leaf curl virus. Let me check if there's specific management for TMV. 
+
+Page 34's cultural controls mention using pathogen-free seeds, early removal of affected plants, and clean transplants. Since TMV is seed-borne, using healthy seeds and removing infected plants would be key. There's no direct mention of a specific treatment for TMV in the context, but the cultural practices are highlighted. The chemical control mentioned (captan) is for another disease, so maybe not applicable here. 
+
+The answer should focus on cultural controls as per the context. So, the steps would be: use healthy seeds, remove infected plants early, and maintain clean transplants. Quantities aren't specified for these measures, but the timing would be during planting and early growth stages to prevent spread.
+</think>
+
+To control **leaf curl virus** (likely **Tobacco Mosaic Virus",2.93,400,1.0,1.0,0.6666666666666666,0.889
+How to control leaf curl virus in chilli?,chilli,Cerebras — LLaMA 3.1 8B,"Based on the provided context, it seems that the leaf curl virus in chilli is related to the TMV (Tobacco Mosaic Virus) and the symptoms are similar to those caused by chilli mite infestation. However, since the context doesn't explicitly mention the leaf curl virus, I will provide advice on how to control the symptoms and diseases mentioned, which might be related to the leaf curl virus.
+
+**Control Measures:**
+
+1. **Production of pathogen-free planting materials**: Use healthy, pathogen-free chilli seeds for planting.
+2. **Early removal of affected plants**: Remove infected plants to control the spread of the disease.
+3. **Transplant care**: Keep transplants clean by removing any infected leaves or debris.
+4. **Cultural control**: Practice good agricultural practices, such as maintaining a healthy crop rotation, removing weeds, and avoiding overwatering.
+
+**Chemical Control (if necessary):**
+
+1. **Captan 75% WP**: Spray captan at a rate of 800 g in 400 l of water per acre, as a last resort.
+
+**Integrated Pest Management (IPM) Strategies:**
+
+1. **Monitor for pests and diseases**: Regularly inspect your chilli crop for signs of pests or diseases.
+2. **Use natural predators**: Encourage natural predators, such as ladybugs or lacewings, to control chilli mite populations.
+3. **Maintain a balanced ecosystem**: Promote a balanced ecosystem by maintaining a diverse range of crops and using organic amendments.
+
+**Crop Management:**
+
+1. **Crop rotation**: Rotate your chilli crop with other crops to break the disease cycle.
+2. **Soil preparation**: Prepare your soil with organic amendments to promote healthy plant growth.
+3. **Irrigation management**: Avoid overwatering, which can exacerbate disease symptoms.
+
+**Specific Advice for Chilli Mite Infestation:**
+
+1. **Spray neem oil**: Spray neem",0.53,400,1.0,1.0,1.0,1.0
+What is the sowing time for soyabean?,soyabean,Groq — LLaMA 3.1 8B,"For rainfed Soyabean in North Western Zone, the optimum time of sowing is the middle of July. However, for Soyabean in general, it can be sown in the first fortnight of June. 
+
+To be more specific, considering the two options:
+
+- For rainfed Soyabean in North Western Zone: Sow in the middle of July.
+- For Soyabean in general: Sow in the first fortnight of June.
+
+So, the recommended sowing time is the first fortnight of June for general Soyabean cultivation.",0.46,116,1.0,1.0,1.0,1.0
+What is the sowing time for soyabean?,soyabean,Sambanova — LLaMA 3.1,"The sowing time for soyabean is in the first fortnight of June, or in the middle of July for rainfed soyabean in the North Western Zone.",1.36,35,1.0,0.3,1.0,0.767
+What is the sowing time for soyabean?,soyabean,Cohere — Command-R,"The sowing time for soyabean depends on the region and whether it is a rainfed or irrigated crop. 
+
+For the North Western Zone, the optimum time for rainfed soyabean sowing is the middle of July. 
+
+In other regions, the crop should be sown in the first fortnight of June, with a seed rate of 25-30 kg per acre. It is recommended to give the field two ploughings followed by planking to ensure good tilth and germination. Soybean can also be sown with a zero-till drill without preparatory tillage. 
+
+The seeds should be dibbled at a depth of 2-3 cm, with a spacing of 30 x 5 cm. In the Erode district, a cropping system of Soybean + Castor with a spacing of 60 cm apart has been found to give high net returns. 
+
+Irrigation is crucial for the crop. It should be irrigated immediately after sowing, with a life irrigation on the 3rd day. Further irrigation should be provided at intervals of 7-10 days during the summer and 10-15 days during the winter season. 
+
+For weed management, Pendimethalin at a rate of 1.0 litre per hectare can be applied after sowing, followed by one hand weeding on the 30th day after sowing. If herbicide spray is not used, two hand weedings on the 20th and 35th days after sowing are recommended. 
+
+Seed treatment with fungicides and biofertilizers is also advised. Treat the seeds with Carbendezim or Thiram @ 2g/kg of seed 24 hours before sowing, or with talc formulation of Trichoderma viride @ 4 g/kg seed or Pseudomonas fluorescens @ 10 g/kg seed.",7.76,396.0,1.0,1.0,1.0,1.0
+What is the sowing time for soyabean?,soyabean,Sarvam AI — Sarvam-M,"<think>
+Okay, let's tackle this question about the sowing time for soybeans. The user is asking for the optimal time to sow soybeans based on the provided context.
+
+First, I need to go through the context given. The sources mentioned are AGRICULTURE.pdf and pp_kharif.pdf. Let me check each relevant page.
+
+Looking at AGRICULTURE.pdf, Page 187 says the middle of July is the optimum time for rainfed soybeans in the North Western Zone. Then, pp_kharif.pdf, Page 78 mentions sowing in the first fortnight of June. There's also a note about pre-sowing irrigation (Rauni) before the monsoon sets in and avoiding heavy rains after sowing.
+
+Wait, there's a conflict here. One source says mid-July, another says first fortnight of June. Also, the context mentions different sowing methods like zero tillage and spacing. The user is asking for the sowing time, so I need to reconcile these sources.
+
+The AGRICULTURE.pdf is specific to the North Western Zone and mentions rainfed conditions. The pp_kharif.pdf seems more general, suggesting the first fortnight of June. The Rauni irrigation is mentioned there, which is a pre-monsoon irrigation. However, the user's question doesn't specify the region, but the answer should be based on the context provided.
+
+Since the context includes both sources, I should present both time frames but note the conditions. The answer should mention both the first fortnight of June (from pp_kharif) and mid-July for rainfed in North Western Zone (from AGRICULTURE). Also, the Rauni irrigation is recommended to avoid heavy rains post-sowing. The seed rate is 25-30 kg per acre as per pp_kharif.
+
+I need to structure the answer with crop name, sowing time, and any",2.92,400,0.5,1.0,1.0,0.833
+What is the sowing time for soyabean?,soyabean,Cerebras — LLaMA 3.1 8B,"The optimum time of sowing for rainfed Soyabean in North Western Zone is the middle of July. However, for other regions, the recommended sowing time is in the first fortnight of June.",0.55,43,1.0,0.3,1.0,0.767
+How much water does sugarcane need?,sugarcane,Groq — LLaMA 3.1 8B,"Based on the provided context, sugarcane requires a specific amount of water for optimal growth. 
+
+For drip irrigation, the recommended discharge is 2.2 litres per hour. The irrigation schedule varies depending on the month:
+
+- April-June: 120 minutes (every third day)
+- July-August: 100 minutes (every third day)
+- September-October: 80 minutes (every third day)
+- November-December: 60 minutes (every third day)
+
+To calculate the total water requirement, we need to multiply the discharge rate (2.2 litres per hour) by the total irrigation time (in hours).
+
+For example, in April-June, the total irrigation time is 120 minutes or 2 hours. 
+
+Water requirement per acre = 2.2 litres/hour * 2 hours = 4.4 litres/acre
+
+Since the drip irrigation is given every third day, we need to multiply this by 3 to get the total water requirement per week.
+
+Water requirement per acre per week = 4.4 litres/acre * 3 = 13.2 litres/acre per week
+
+To get the total water requirement per acre per month, we can multiply this by the number of weeks in the month.
+
+For example, in April (30 days), there are approximately 4 weeks.
+
+Water requirement per acre per month = 13.2 litres/acre/week * 4 weeks = 52.8 litres/acre per month
+
+However, this is a simplified calculation and actual water requirement may vary depending on several factors such as soil type, climate, and crop growth stage.",0.74,331,1.0,1.0,1.0,1.0
+How much water does sugarcane need?,sugarcane,Sambanova — LLaMA 3.1,"According to the context, the water requirement for sugarcane is as follows:
+
+* Drip irrigation with dripper discharge of 2.2 litres per hour, given every third day.
+* The duration of irrigation varies by month:
+	+ April-June: 120 minutes
+	+ July-August: 100 minutes
+	+ September-October: 80 minutes
+	+ November-December: 60 minutes
+
+Additionally, during the hot and dry period (April to June), sugarcane should be irrigated at 7 to 12 days interval, and during the rainy season, the frequency of irrigation should be adjusted according to rainfall.",1.95,133,1.0,1.0,1.0,1.0
+How much water does sugarcane need?,sugarcane,Cohere — Command-R,"To ensure optimal growth and yield of sugarcane, here is a practical guide for Indian farmers:
+
+- **Water Requirements:**
+   - During the hot and dry months of April to June, which is a critical period for sugarcane growth, irrigate the crop at an interval of 7 to 12 days.
+   - For the remaining months, adjust the irrigation frequency based on rainfall.
+   - Drip irrigation is recommended, with a lateral pipe placed 20 cm deep and 150 cm apart, having dripper spacing of 30 cm.
+   - The dripper discharge should be 2.2 litres per hour.
+   - The irrigation schedule can be as follows:
+     - April to June: 120 minutes of irrigation
+     - July to August: 100 minutes of irrigation
+     - September to October: 80 minutes of irrigation
+     - November to December: 60 minutes of irrigation
+
+- **Foliar Spray:**
+   - To enhance cane growth, weight, internodal length, and sugar content, as well as provide drought tolerance, a foliar spray of TNAU Sugarcane Booster is recommended.
+   - Apply the booster at 1.0, 1.5, and 2 kg per acre in 200 litres of water at 45, 60, and 75 days after planting.
+
+- **Climate Considerations:**
+   - Sugarcane is a tropical crop and thrives in warm temperatures.
+   - Ensure the region has an optimum temperature range of 32 to 35 degrees Celsius and an altitude of 1000 to 3000 meters above sea level.
+   - Adequate sunlight and day length are crucial for proper tillering and growth.
+
+- **Irrigation Management:**
+   - Monitor the soil moisture levels regularly to avoid over- or under-watering.
+   - Consider using moisture sensors or observing plant stress indicators to adjust irrigation",7.31,400.0,1.0,1.0,1.0,1.0
+How much water does sugarcane need?,sugarcane,Sarvam AI — Sarvam-M,"<think>
+Okay, let's tackle the user's question about how much water sugarcane needs. First, I need to look through the provided context to find relevant information.
+
+Looking at the sources, the pp_rabi.pdf and pp_kharif.pdf both mention drip irrigation schedules. The pp_rabi.pdf (Page 49) says sugarcane should be drip irrigated every third day with a lateral pipe, dripper spacing, and discharge rate of 2.2 liters per hour. The pp_kharif.pdf (Page 87) also mentions similar drip irrigation details, specifying the time of irrigation in minutes for different months. For example, April-June requires 120 minutes, which translates to 2 hours. Since the discharge is 2.2 liters per hour, that would be 2.2 * 2 = 4.4 liters per irrigation session. But since irrigation is every third day, over a month (assuming 30 days), that's 10 irrigations (30/3), totaling 44 liters per acre per month. However, the user might be asking about total water needs, not just irrigation. The context also mentions that during the hot and dry period (April-June), irrigation should be every 7-12 days, which might mean more water is needed then. But the drip irrigation specifics are the main data points here. The answer should focus on the drip irrigation schedule and calculate the water requirement based on that. The answer should mention the drip irrigation method, frequency, and the calculated water per acre per month. Also, note that during peak months, the irrigation time increases, so water usage would be higher. The answer should be practical, using the given data without assuming beyond the context.
+</think>
+
+For sugarcane irrigation under drip systems (as per context from pp_rabi.pdf and pp_khar",2.89,400,1.0,1.0,1.0,1.0
+How much water does sugarcane need?,sugarcane,Cerebras — LLaMA 3.1 8B,"Based on the given context, sugarcane requires the following amount of water:
+
+- Under drip irrigation, the lateral pipe should be placed 20 cm deep and 150 cm apart with dripper spacing 30 cm.
+- Drip irrigation with a dripper discharge of 2.2 litres per hour should be given as per the following schedule:
+  - April-June: 120 minutes (every third day)
+  - July-August: 100 minutes (every third day)
+  - September-October: 80 minutes (every third day)
+  - November-December: 60 minutes (every third day)
+
+However, the total amount of water required per day is not explicitly mentioned in the given context. To calculate the total amount of water required per day, we need to multiply the dripper discharge (2.2 litres per hour) by the duration of irrigation (in hours).
+
+For example, in April-June, the irrigation duration is 120 minutes or 2 hours. So, the total amount of water required per day would be:
+2.2 litres/hour x 2 hours = 4.4 litres per day
+
+Similarly, we can calculate the total amount of water required per day for other months:
+- July-August: 2.2 litres/hour x 1.67 hours (100 minutes / 60 minutes) = 3.67 litres per day
+- September-October: 2.2 litres/hour x 1.33 hours (80 minutes / 60 minutes) = 2.93 litres per day
+- November-December: 2.2 litres/hour x 1 hour (60 minutes / 60 minutes) = 2.2 litres per day
+
+However, please note that this is an estimate and the actual amount of water required may vary depending on several factors such as soil type, climate, and crop growth stage.",0.69,388,1.0,1.0,1.0,1.0
+What diseases affect tomato plants?,tomato,Groq — LLaMA 3.1 8B,"Based on the provided context, the following diseases affect tomato plants:
+
+1. **Early Blight**: Caused by bacterial cells transmitted through rain splash, favorable conditions include soil temperature of around 28 °C, high humidity or persistent dew, and moist weather with intermittent showers.
+2. **Damping Off**: Occurs in two stages: pre-emergence and post-emergence phase, where seedlings are killed just before they reach the soil surface, and the young radical and plumule are killed with complete rotting of the seedlings.
+3. **Tomato Mosaic Disease**: Caused by Tomato Mosaic Virus, spread by contact with clothes, hand of working labor, touching of infected plants with healthy ones, plant debris, and implements.
+4. **Bacterial Fruits and Leaf Spots**: Caused by Xanthomonas campestris pv. vesicatoria, prevalent in Andhra Pradesh, Tamil Nadu, Karnataka, and other states.
+5. **Tomato Spotted Wilt Disease**: Caused by Peanut bud Necrosis Virus (PbNV) TSWV group, symptoms include stunting, and prevalent in Himachal Pradesh, Andhra Pradesh, Karnataka, Tamil Nadu.
+
+Please refer to the respective pages mentioned in the context for management advice on these diseases.",0.48,265,1.0,1.0,0.3333333333333333,0.778
+What diseases affect tomato plants?,tomato,Sambanova — LLaMA 3.1,"Based on the provided context, the following diseases affect tomato plants:
+
+1. Damping Off
+2. Tomato Mosaic Disease
+3. Bacterial fruits and leaf spots (caused by Xanthomonas campestris pv. vesicatoria)
+4. Tomato spotted wilt disease (caused by Peanut bud Necrosis Virus or TSWV group)
+5. Early blight 
+
+Note that there may be other diseases mentioned in the full document, but these are the ones mentioned in the provided context.",1.72,103,1.0,0.7,0.0,0.567
+What diseases affect tomato plants?,tomato,Cohere — Command-R,"Tomato plants can be affected by various diseases, and it is important for farmers to be aware of these to ensure proper management and control. Here are some of the common diseases that affect tomato plants, along with practical advice:
+
+1. Damping Off:
+   - Description: Damping off is a fungal disease that affects tomato seedlings. It occurs in two stages, pre-emergence and post-emergence.
+   - Symptoms: In the pre-emergence phase, seedlings are killed before reaching the soil surface. The young radical and plumule are killed, and seedlings rot completely.
+   - Management: To manage damping off, farmers should ensure proper seedling care. Maintain good hygiene in the nursery, use sterilized soil or seed-starting mixes, and provide adequate ventilation. Avoid overwatering and ensure proper drainage.
+
+2. Early Blight:
+   - Description: Early blight is a common fungal disease that affects tomato foliage.
+   - Symptoms: It occurs at any growth stage and causes brown to black spots with concentric rings on leaves. The spots may enlarge and cause leaf yellowing and defoliation.
+   - Management: To control early blight, farmers should practice crop rotation, remove and destroy infected plant debris, and use resistant tomato varieties if available. Fungicidal treatments may be necessary in severe cases.
+
+3. Tomato Mosaic Disease:
+   - Description: Tomato Mosaic Disease is caused by the Tomato Mosaic Virus (ToMV).
+   - Symptoms: Infected plants show mosaic patterns on leaves, stunted growth, and distorted fruits.
+   - Management: To manage this disease, farmers should practice strict hygiene and avoid contact with infected plants. Use virus-free seeds, and remove and destroy any infected plants promptly.
+
+4. Bacterial Fruit and Leaf Spots:
+   - Description: Bacterial fruit and leaf spots are caused by *Xanthomonas campestris pv. vesicatoria*.
+   - Symptoms: This disease causes water-soaked lesions on leaves and fruits",12.17,400.0,1.0,1.0,0.3333333333333333,0.778
+What diseases affect tomato plants?,tomato,Sarvam AI — Sarvam-M,"<think>
+Okay, let's tackle this question. The user is asking about diseases that affect tomato plants. I need to go through the provided context to find the relevant information.
+
+Looking at the sources, Page 10 mentions Tomato Mosaic Virus, Bacterial fruits and leaf spots caused by Xanthomonas campestris pv. vesicatoria, and Tomato spotted wilt disease caused by Peanut bud Necrosis Virus (PbNV) which is part of the TSWV group. These are all diseases affecting tomatoes. 
+
+Page 63 talks about Early blight, which is a common disease on foliage. Page 60 mentions Damping Off in two stages. Page 67 discusses Tomato spotted wilt disease again, noting symptoms like stunting. 
+
+So compiling these, the diseases listed are Tomato Mosaic Disease, Bacterial Blight (from Xanthomonas), Tomato Spotted Wilt Disease, Early Blight, and Damping Off. Each of these has their own symptoms and management references. The answer should list these diseases with their respective causes and symptoms as per the context provided.
+</think>
+
+**Diseases Affecting Tomato Plants (Based on Context):**  
+
+1. **Tomato Mosaic Disease**  
+   - **Causative Agent**: Tomato Mosaic Virus (TMV).  
+   - **Symptoms**: Not explicitly detailed in the context, but typically includes mottled leaf patches, stunted growth, and distorted leaves.  
+
+2. **Bacterial Blight (Bacterial Fruits and Leaf Spots)**  
+   - **Causative Agent**: *Xanthomonas campestris* pv. *vesicatoria*.  
+   - **Symptoms**: Leaf spots, fruit lesions, and blight.  
+   - **Affected Regions**: Andhra Pradesh, Tamil Nadu, Karnataka, and other states.  
+
+3.",2.93,400,1.0,1.0,0.0,0.667
+What diseases affect tomato plants?,tomato,Cerebras — LLaMA 3.1 8B,"Based on the given context, the following diseases affect tomato plants:
+
+1. **Early Blight**: Caused by bacterial cells transmitted through rain splash, favourable conditions include soil temperature of around 28 °C, high humidity or persistent dew, and moist weather with intermittent showers.
+2. **Damping Off**: A disease that occurs in two stages, pre-emergence and post-emergence, where seedlings are killed, and there is complete rotting of the seedlings.
+3. **Tomato Mosaic Disease**: Caused by Tomato Mosaic Virus, spread by contact with clothes, hand of working labour, touching of infected plants with healthy ones, plant debris, and implements.
+4. **Bacterial Fruits and Leaf Spots**: Caused by Xanthomonas campestris pv. vesicatoria, prevalent in Andhra Pradesh, Tamil Nadu, Karnataka, and other states.
+5. **Tomato Spotted Wilt Disease**: Caused by Peanut bud Necrosis Virus (PbNV) TSWV group, symptoms include stunting, and prevalent in Himachal Pradesh, Andhra Pradesh, Karnataka, Tamil Nadu, and other states.
+
+To manage these diseases, refer to the respective page numbers mentioned in the context for detailed management strategies.",0.5,259,1.0,1.0,0.3333333333333333,0.778
