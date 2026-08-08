@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify, render_template
 from dotenv import load_dotenv
 load_dotenv()
@@ -304,5 +305,6 @@ if __name__ == "__main__":
 
     app.run(
         debug=False,
-        port=5000
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5000))
     )
