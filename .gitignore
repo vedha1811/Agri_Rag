@@ -18,9 +18,6 @@ env/
 # Local ChromaDB database
 agri_db/
 
-# Local dataset
-Dataset/
-
 # IDE / editor files
 .vscode/
 .idea/
