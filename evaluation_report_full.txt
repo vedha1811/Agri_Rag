@@ -1,72 +1,87 @@
-===========================================================================
-  Agricultural RAG System — Complete Evaluation Report
-  Questions evaluated : 48
-  Models evaluated    : 4
-  Metrics             : ROUGE-1/2/L, BLEU-1/2/4, METEOR, Heuristic
-===========================================================================
+================================================================================
+Agricultural RAG System — Final Model Evaluation
+================================================================================
 
-── NLP METRICS (ROUGE / BLEU / METEOR) ──────────────────────────
+Evaluation dataset : 48 reference questions
+Models evaluated   : 4
+Metrics            : ROUGE, BLEU, METEOR, Heuristic
 
-Model                                  R-1    R-2    R-L    B-1    B-4    MTR
-----------------------------------------------------------------------
-Groq — LLaMA 3.1 8B                 0.4712 0.3000 0.3558 0.3187 0.1655 0.4650
-Cerebras — LLaMA 3.1 8B             0.4579 0.2878 0.3529 0.3134 0.1618 0.4467
-Cohere — Command-R                  0.3955 0.2140 0.2801 0.2760 0.1160 0.4240
-Sarvam AI — Sarvam-M                0.3025 0.1474 0.2042 0.1838 0.0710 0.3904
+Note: Metrics are calculated using successful model generations only.
+Cerebras GPT-OSS 120B had one failed generation (Q34).
 
-── HEURISTIC METRICS ─────────────────────────────────────────────
+FINAL MODEL COMPARISON
+--------------------------------------------------------------------------------
+1. Cohere — Command-R
+   Successful : 48/48
+   Failed     : 0
+   ROUGE-1    : 0.3848
+   ROUGE-2    : 0.2077
+   ROUGE-L    : 0.2688
+   BLEU-1     : 0.2734
+   BLEU-2     : 0.1950
+   BLEU-4     : 0.1152
+   METEOR     : 0.4174
+   Relevance  : 0.9792
+   Completeness: 0.9604
+   Practicality: 0.9219
+   Heuristic  : 0.9538
+   Combined   : 0.6252
+   Avg time   : 32.49s
 
-Model                                 Relev   Compl   Pract     Avg    Time
----------------------------------------------------------------------------
-Groq — LLaMA 3.1 8B                  0.9688  0.9000  0.7969  0.8885   0.63s
-Cerebras — LLaMA 3.1 8B              0.9792  0.8958  0.7760  0.8837   0.57s
-Cohere — Command-R                   0.9583  0.9458  0.8854  0.9299   5.28s
-Sarvam AI — Sarvam-M                 0.9583  1.0000  0.8177  0.9253   2.98s
+2. Groq — LLaMA 3.1 8B
+   Successful : 48/48
+   Failed     : 0
+   ROUGE-1    : 0.4415
+   ROUGE-2    : 0.2733
+   ROUGE-L    : 0.3417
+   BLEU-1     : 0.3051
+   BLEU-2     : 0.2277
+   BLEU-4     : 0.1524
+   METEOR     : 0.4146
+   Relevance  : 0.9792
+   Completeness: 0.8396
+   Practicality: 0.7656
+   Heuristic  : 0.8615
+   Combined   : 0.5995
+   Avg time   : 0.75s
 
-── COMBINED RANKING (NLP + Heuristic average) ───────────────────
+3. Sarvam AI — Sarvam-105B
+   Successful : 48/48
+   Failed     : 0
+   ROUGE-1    : 0.3389
+   ROUGE-2    : 0.1970
+   ROUGE-L    : 0.2599
+   BLEU-1     : 0.2290
+   BLEU-2     : 0.1650
+   BLEU-4     : 0.1068
+   METEOR     : 0.2813
+   Relevance  : 0.8125
+   Completeness: 0.6667
+   Practicality: 0.5417
+   Heuristic  : 0.6736
+   Combined   : 0.4602
+   Avg time   : 1.25s
 
-Rank  Model                                Combined Score  Avg Time
-----------------------------------------------------------------------
-🥇 #1  Groq — LLaMA 3.1 8B                        0.6265     0.63s
-🥈 #2  Cerebras — LLaMA 3.1 8B                    0.6192     0.57s
-🥉 #3  Cohere — Command-R                         0.6169     5.28s
-   #4  Sarvam AI — Sarvam-M                       0.5837     2.98s
+4. Cerebras — GPT-OSS 120B
+   Successful : 47/48
+   Failed     : 1
+   ROUGE-1    : 0.2889
+   ROUGE-2    : 0.1128
+   ROUGE-L    : 0.1908
+   BLEU-1     : 0.1427
+   BLEU-2     : 0.0748
+   BLEU-4     : 0.0310
+   METEOR     : 0.1734
+   Relevance  : 0.8511
+   Completeness: 0.6638
+   Practicality: 0.5851
+   Heuristic  : 0.7000
+   Combined   : 0.4355
+   Avg time   : 2.13s
 
-===========================================================================
-  🏆 BEST OVERALL  : Groq — LLaMA 3.1 8B
-     Combined Score: 0.6265
-     ROUGE-1       : 0.4712
-     BLEU-4        : 0.1655
-     METEOR        : 0.4650
-
-  ⚡ FASTEST        : Cerebras — LLaMA 3.1 8B (0.57s avg)
-  📊 BEST ROUGE-1   : Groq — LLaMA 3.1 8B (0.4712)
-
-  RECOMMENDATION FOR PROJECT DEMO:
-  Use 'Groq — LLaMA 3.1 8B' as the primary model.
-  Fallback to 'Cerebras — LLaMA 3.1 8B' if speed is critical.
-
-===========================================================================
-  METRIC EXPLANATIONS (for your project report)
-===========================================================================
-
-  ROUGE-1  : Word overlap between generated and reference answer.
-             Higher = more words from reference are in the answer.
-
-  ROUGE-2  : 2-word phrase overlap. Captures local fluency.
-             Higher = answer uses similar phrasing as reference.
-
-  ROUGE-L  : Longest common word sequence match.
-             Higher = answer follows similar word order.
-
-  BLEU-1   : 1-gram precision — are individual words correct?
-  BLEU-2   : 2-gram precision — are word pairs correct?
-  BLEU-4   : 4-gram precision — standard BLEU (most strict).
-             Originally for translation; adapted here for QA.
-
-  METEOR   : Considers synonyms + recall. Best for advisory text.
-             E.g. 'cultivate' ≈ 'grow', 'irrigating' ≈ 'irrigated'
-
-  Note: Scores above 0.3 are considered good for open-domain QA.
-  Agricultural QA typically scores 0.25–0.45 on ROUGE-1.
-===========================================================================
+================================================================================
+OVERALL FINDINGS
+================================================================================
+Best overall : Cohere — Command-R (0.6252)
+Fastest      : Groq — LLaMA 3.1 8B (0.75s)
+Best ROUGE-1 : Groq — LLaMA 3.1 8B (0.4415)

@@ -45,8 +45,8 @@ import llm_sambanova
 LLMS = [
     ("Groq — LLaMA 3.1 8B",       llm_groq),
     ("Cohere — Command-R",         llm_cohere),
-    ("Cerebras — LLaMA 3.1 8B",   llm_cerebras),
-    ("Sarvam AI — Sarvam-M",      llm_sarvam),
+    ("Cerebras — GPT-OSS 120B",   llm_cerebras),
+    ("Sarvam AI — Sarvam-105B",      llm_sarvam),
     #("Sambanova — LLaMA 3.3 70B", llm_sambanova),
 ]
 
