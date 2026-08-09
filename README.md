@@ -1,195 +1,167 @@
-# Adaptive Context-Aware Multi-LLM RAG Framework for Agricultural Advisory
+# 🌾 Kisan Saathi — Adaptive Multi-LLM RAG for Agricultural Advisory
 
-An intelligent agricultural advisory system based on Retrieval-Augmented Generation (RAG), semantic retrieval, cross-encoder reranking, and adaptive multi-LLM response generation.
+**Kisan Saathi** is an AI-powered agricultural advisory system built using **Retrieval-Augmented Generation (RAG)** to provide context-aware and practical responses to agricultural queries.
 
-## Overview
+The system combines **semantic retrieval, cross-encoder reranking, domain-specific agricultural knowledge, and multiple Large Language Models (LLMs)** to generate reliable agricultural recommendations grounded in retrieved source documents.
 
-This project implements a Retrieval-Augmented Generation framework for answering agricultural queries using information retrieved from a domain-specific agricultural knowledge base.
+### 🚀 Live Demo
 
-The system processes agricultural documents, divides them into meaningful chunks, generates semantic embeddings, stores them in ChromaDB, retrieves relevant passages for a user query, and reranks the retrieved results using a cross-encoder.
+**[Kisan Saathi — Streamlit App](https://agrirag-4v7elgsv9mpjakbckgrtj4.streamlit.app/)**
 
-The retrieved context is then provided to multiple Large Language Model (LLM) providers. The framework supports adaptive routing across different LLMs to generate context-aware and practical agricultural responses.
+---
 
-## Key Features
+## 📌 Overview
 
-- Retrieval-Augmented Generation (RAG) for agricultural advisory
-- Agricultural document processing and semantic chunking
-- OCR-based processing for scanned documents
-- Dense semantic embeddings using Sentence Transformers
-- ChromaDB-based vector retrieval
-- Cross-encoder reranking
-- Multi-LLM integration
-- Adaptive LLM routing
-- Support for Cohere, Groq, Sarvam, Cerebras, and SambaNova
-- Flask-based web application
-- Automated response evaluation
-- Evaluation using ROUGE, BLEU, METEOR, relevance, completeness, and practicality metrics
+Kisan Saathi processes agricultural documents into a searchable domain-specific knowledge base and uses a RAG pipeline to answer farmer queries.
 
-## System Architecture
+The system:
+
+1. Processes agricultural documents and scanned content.
+2. Performs semantic chunking of the documents.
+3. Generates dense vector embeddings using Sentence Transformers.
+4. Stores the embeddings in ChromaDB.
+5. Retrieves relevant agricultural passages for a user query.
+6. Reranks retrieved passages using a cross-encoder.
+7. Provides the retrieved context to multiple LLM providers.
+8. Supports adaptive model selection for response generation.
+9. Displays the generated agricultural advisory along with retrieved sources.
+
+The final knowledge base contains:
+
+- **13,833 indexed knowledge chunks**
+- **42 crop categories**
+- Domain-specific agricultural documents
+
+---
+
+## ✨ Key Features
+
+- 🔎 Retrieval-Augmented Generation (RAG)
+- 🌱 Domain-specific agricultural knowledge base
+- 📄 Agricultural document processing
+- 🖨️ OCR-assisted processing for scanned documents
+- 🧩 Semantic document chunking
+- 🧠 Dense semantic embeddings
+- 🗄️ ChromaDB vector database
+- 🔄 Cross-encoder reranking
+- 🤖 Multi-LLM response generation
+- ⚡ Adaptive / Auto model selection
+- 📚 Retrieved source attribution
+- 📊 Automated response evaluation
+- 🚀 Streamlit-based deployment
+
+---
+
+## 🏗️ System Architecture
 
 ```text
-Agricultural Documents
-        |
-        v
-Document Processing / OCR
-        |
-        v
-Semantic Chunking
-        |
-        v
-Sentence Transformer Embeddings
-        |
-        v
-ChromaDB Vector Database
-        |
-        v
-User Query
-        |
-        v
-Semantic Retrieval
-        |
-        v
-Cross-Encoder Reranking
-        |
-        v
-Adaptive Multi-LLM Routing
-        |
-        +---- Cohere
-        |
-        +---- Groq
-        |
-        +---- Sarvam
-        |
-        +---- Cerebras
-        |
-        +---- SambaNova
-        |
-        v
-Context-Aware Agricultural Response
+                Agricultural Documents
+                         │
+                         ▼
+             Document Processing / OCR
+                         │
+                         ▼
+                 Semantic Chunking
+                         │
+                         ▼
+             Sentence Transformer
+                   Embeddings
+                         │
+                         ▼
+                   ChromaDB
+              Vector Knowledge Base
+                         │
+                         │
+                  User Question
+                         │
+                         ▼
+                Query Embedding
+                         │
+                         ▼
+               Semantic Retrieval
+                         │
+                         ▼
+              Cross-Encoder Reranking
+                         │
+                         ▼
+                Top-K Context
+                         │
+                         ▼
+              Adaptive LLM Routing
+                         │
+          ┌──────────────┼──────────────┐
+          │              │              │
+          ▼              ▼              ▼
+        Groq          Cohere        Sarvam-105B
+          │              │              │
+          └──────────────┼──────────────┘
+                         │
+                         ▼
+                Cerebras GPT-OSS
+                     120B
+                         │
+                         ▼
+             Context-Aware Agricultural
+                    Advisory
+                         │
+                         ▼
+                Retrieved Sources
 
-Technologies Used
-Python
-Flask
-Retrieval-Augmented Generation (RAG)
+🤖 Supported LLMs
+
+The deployed system currently integrates four LLM providers:
+
+Provider	Model
+Groq	LLaMA 3.1 8B
+Cohere	Command-R
+Sarvam AI	Sarvam-105B
+Cerebras	GPT-OSS 120B
+
+The application also provides an Auto / Best Available Model option for adaptive model selection.
+
+🔍 RAG Pipeline
+1. Document Processing
+
+Agricultural documents are collected and processed using PDF extraction and OCR techniques where required.
+
+2. Semantic Chunking
+
+Documents are divided into meaningful passages while preserving agricultural context.
+
+3. Embedding Generation
+
+The system uses:
+
+all-MiniLM-L6-v2
+
+to generate dense semantic embeddings.
+
+4. Vector Storage
+
+Embeddings and document metadata are stored in:
+
 ChromaDB
-Sentence Transformers
-Cross-Encoder Reranking
-LangChain Text Splitters
-Cohere API
-Groq API
-Sarvam API
-Cerebras API
-SambaNova API
-PyMuPDF
-Tesseract OCR
-pdf2image
-Pillow
+5. Semantic Retrieval
 
-Project Structure
+For each user query, relevant passages are retrieved from the agricultural knowledge base.
 
-Agri_Rag/
-|
-+-- app.py
-+-- config.py
-+-- retriever.py
-+-- llm.py
-|
-+-- llm_cohere.py
-+-- llm_groq.py
-+-- llm_sarvam.py
-+-- llm_cerebras.py
-+-- llm_sambanova.py
-|
-+-- 01_ingest.py
-+-- 02_query.py
-+-- 03_rag_answer.py
-+-- ocr_ingest.py
-+-- dataset_generator.py
-+-- Evaluate.py
-|
-+-- template.html
-+-- images/
-|
-+-- evaluation_results.csv
-+-- evaluation_results_full.csv
-+-- evaluation_report.txt
-+-- evaluation_report_full.txt
-+-- rouge_bleu_summary.csv
-|
-+-- reference_dataset.csv
-+-- reference_dataset.json
-+-- methodology.docx
-|
-+-- requirements.txt
-+-- .gitignore
-+-- README.md
+6. Cross-Encoder Reranking
 
-Installation
+Retrieved passages are reranked using:
 
-Clone the repository:
+cross-encoder/ms-marco-MiniLM-L-6-v2
 
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd Agri_Rag
+The highest-ranked passages are passed to the selected LLM.
 
-Create a virtual environment:
+7. Response Generation
 
-python3 -m venv .venv
+The LLM receives the retrieved agricultural context and generates a practical response constrained by the available knowledge.
 
-Activate the environment:
+📊 Evaluation
 
-source .venv/bin/activate
+The system was evaluated using 48 reference agricultural questions across the supported LLMs.
 
-Install the required Python packages:
-
-pip install -r requirements.txt
-Environment Variables
-
-The application uses environment variables to store API credentials.
-
-Create a .env file in the project root:
-
-GROQ_API_KEY=your_key
-CO_API_KEY=your_key
-SARVAM_API_KEY=your_key
-CEREBRAS_API_KEY=your_key
-SAMBANOVA_API_KEY=your_key
-
-Replace the values with your own API keys.
-
-Never upload the .env file to GitHub.
-
-The .env file is excluded from version control through .gitignore.
-
-Running the Application
-
-Start the Flask application:
-
-python3 app.py
-
-The application will be available at:
-
-http://127.0.0.1:5000
-
-Open the address in your web browser.
-
-Knowledge Base
-
-The system uses a domain-specific agricultural document collection as its knowledge source.
-
-The documents are processed through the ingestion pipeline, converted into semantic embeddings, and stored in a ChromaDB vector database.
-
-The following directories are intentionally excluded from the GitHub repository because of their size:
-
-Dataset/
-agri_db/
-
-The Dataset/ directory contains the source agricultural documents, while agri_db/ contains the generated vector database.
-
-Evaluation
-
-The project includes evaluation results for the generated agricultural responses.
-
-The evaluation considers multiple response-quality and text-generation metrics, including:
+Evaluation metrics include:
 
 ROUGE-1
 ROUGE-2
@@ -201,23 +173,213 @@ METEOR
 Relevance
 Completeness
 Practicality
-Combined evaluation score
+Combined Score
+Average Response Time
+Final Model Comparison
+Model	Successful	R-1	R-L	BLEU-4	METEOR	Heuristic	Combined	Avg. Time
+Cohere — Command-R	48/48	0.3848	0.2688	0.1152	0.4174	0.9538	0.6252	32.49s
+Groq — LLaMA 3.1 8B	48/48	0.4415	0.3417	0.1524	0.4146	0.8615	0.5995	0.75s
+Sarvam-105B	48/48	0.3389	0.2599	0.1068	0.2813	0.6736	0.4602	1.25s
+Cerebras — GPT-OSS 120B	47/48	0.2889	0.1908	0.0310	0.1734	0.7000	0.4355	2.13s
+Key Results
+
+🏆 Best Overall: Cohere — Command-R
+Combined Score: 0.6252
+
+⚡ Fastest Model: Groq — LLaMA 3.1 8B
+Average Response Time: 0.75 seconds
+
+📊 Best ROUGE-1: Groq — LLaMA 3.1 8B
+ROUGE-1: 0.4415
+
+The evaluation demonstrates a trade-off between response quality and generation latency across the different LLM providers.
 
 Detailed evaluation results are available in:
 
 evaluation_results_full.csv
+rouge_bleu_summary.csv
 evaluation_report_full.txt
-Security
+🛠️ Technologies Used
+Core
+Python
+Retrieval-Augmented Generation (RAG)
+Streamlit
+ChromaDB
+Retrieval
+Sentence Transformers
+Cross-Encoder Reranking
+Dense Vector Embeddings
+LLM APIs
+Groq API
+Cohere API
+Sarvam AI API
+Cerebras API
+Document Processing
+PyMuPDF
+Tesseract OCR
+pdf2image
+Pillow
+LangChain Text Splitters
+Evaluation
+ROUGE
+BLEU
+METEOR
+Relevance
+Completeness
+Practicality
+📁 Project Structure
+Agri_Rag/
+│
+├── streamlit_app.py
+├── retriever.py
+├── config.py
+│
+├── llm_groq.py
+├── llm_cohere.py
+├── llm_sarvam.py
+├── llm_cerebras.py
+│
+├── 01_ingest.py
+├── 02_query.py
+├── 03_rag_answer.py
+├── ocr_ingest.py
+├── dataset_generator.py
+│
+├── Evaluate.py
+│
+├── evaluation_results.csv
+├── evaluation_results_full.csv
+├── evaluation_report_full.txt
+├── rouge_bleu_summary.csv
+│
+├── reference_dataset.csv
+├── reference_dataset.json
+│
+├── requirements.txt
+├── runtime.txt
+├── .gitignore
+└── README.md
+⚙️ Installation
 
-API credentials are handled through environment variables and are not included in the repository.
+Clone the repository:
 
-The following files and directories are intentionally excluded from version control:
+git clone https://github.com/vedha1811/Agri_Rag.git
+cd Agri_Rag
+
+Create a virtual environment:
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+Install dependencies:
+
+pip install -r requirements.txt
+🔐 Environment Variables
+
+API credentials are stored using environment variables.
+
+Create a .env file:
+
+GROQ_API_KEY=your_key
+CO_API_KEY=your_key
+SARVAM_API_KEY=your_key
+CEREBRAS_API_KEY=your_key
+
+Never commit .env or API keys to GitHub.
+
+The .gitignore configuration excludes sensitive credentials.
+
+▶️ Running the Application
+
+Start the Streamlit application:
+
+streamlit run streamlit_app.py
+
+The application provides:
+
+Crop selection
+AI model selection
+Auto model selection
+Agricultural question input
+Retrieved source display
+Context-aware agricultural advisory
+🗄️ Knowledge Base
+
+The project uses a domain-specific agricultural knowledge base.
+
+The generated ChromaDB database is intentionally excluded from Git because of its size.
+
+agri_db/
+
+The deployed application loads the pre-built knowledge base separately.
+
+📚 Evaluation Dataset
+
+The evaluation dataset contains 48 agricultural reference questions covering different crops and question types.
+
+The evaluation pipeline compares responses from the supported LLMs using both:
+
+lexical/text-generation metrics
+heuristic agricultural response-quality metrics
+🔒 Security
+
+API credentials are handled through environment variables.
+
+The following are excluded from version control:
 
 .env
-Dataset/
 agri_db/
+agri_db.tar.gz
 __pycache__/
 .DS_Store
-Academic Project
 
-This project was developed as an academic implementation of an intelligent agricultural advisory system using Retrieval-Augmented Generation, semantic retrieval, reranking, and multi-LLM integration.
+No API credentials are stored in the source code.
+
+🚀 Deployment
+
+The application is deployed using Streamlit Community Cloud.
+
+Live Application
+
+Kisan Saathi — Live Demo
+
+The deployed application loads the pre-built ChromaDB knowledge base and provides real-time agricultural advisory through the integrated LLM providers.
+
+🎓 Academic Project
+
+Kisan Saathi was developed as an academic project demonstrating the application of:
+
+Retrieval-Augmented Generation
+Semantic information retrieval
+Cross-encoder reranking
+Multi-LLM integration
+Adaptive model selection
+Domain-specific knowledge grounding
+Automated LLM evaluation
+
+The project focuses on building a practical agricultural advisory system where generated responses are grounded in retrieved agricultural source documents.
+
+👩‍💻 Author
+
+Vedha Smitha Murari
+
+GitHub:
+https://github.com/vedha1811
+
+
+### One important correction
+
+Your old README says:
+
+> `Support for Cohere, Groq, Sarvam, Cerebras, and SambaNova`
+
+**Don't keep that statement.** Your final deployed system has four active models. Although `llm_sambanova.py` still exists in the repository, SambaNova is no longer part of the deployed model selection after your final changes.
+
+Also change the old:
+
+> `Start the Flask application: python3 app.py`
+
+to the Streamlit command:
+
+```bash
+streamlit run streamlit_app.py
