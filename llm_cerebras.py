@@ -11,14 +11,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 client     = Cerebras(api_key=os.environ.get("CEREBRAS_API_KEY"))
-MODEL_ID   = "llama3.1-8b"
-MODEL_NAME = "LLaMA 3.1 8B (Cerebras)"
-
+MODEL_ID   = "gpt-oss-120b"
+MODEL_NAME = "GPT-OSS 120B (Cerebras)"
 def generate_answer(query, context_chunks):
+
     context = "\n\n".join([
         f"[Source: {m['filename']}, Page {m['page']}]\n{doc}"
         for _, doc, m in context_chunks
     ])
+
     prompt = f"""You are an expert agricultural advisor for Indian farmers.
 Use ONLY the context below to answer the question.
 Give practical advice with crop name, quantities, timing and steps.
@@ -30,57 +31,91 @@ CONTEXT:
 FARMER'S QUESTION: {query}
 
 ANSWER:"""
+
+    start = time.time()
+
     try:
-        start = time.time()
+
         r = client.chat.completions.create(
             model=MODEL_ID,
-            messages=[{"role": "user", "content": prompt}],
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
             max_tokens=400,
             temperature=0.3,
         )
+
         elapsed = round(time.time() - start, 2)
-        answer  = r.choices[0].message.content.strip()
-        tokens  = r.usage.completion_tokens
-        print(f"  [{MODEL_NAME}] {elapsed}s | {tokens} tokens")
-        return {"answer": answer, "model": MODEL_NAME, "time_s": elapsed, "tokens": tokens}
-    except Exception as e:
+        content = r.choices[0].message.content
 
-      if "429" in str(e):
+        if not content:
+           print(f"  [{MODEL_NAME}] No final content returned")
+           return None
 
-        print("  [Cerebras] Retrying after traffic delay...")
+        answer = content.strip()
+        tokens = r.usage.completion_tokens
 
-        time.sleep(3)
+        print(
+            f"  [{MODEL_NAME}] {elapsed}s | {tokens} tokens"
+        )
 
-        try:
+        return {
+            "answer": answer,
+            "model": MODEL_NAME,
+            "time_s": elapsed,
+            "tokens": tokens
+        }
 
-            r = client.chat.completions.create(
-                model=MODEL_ID,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ],
-                temperature=0.3,
-                max_tokens=400
+    except Exception as error:
+
+        error_message = str(error)
+
+        print(
+            f"  [{MODEL_NAME}] ERROR: {error_message}"
+        )
+
+        # Retry only for rate-limit errors
+        if "429" in error_message:
+
+            print(
+                "  [Cerebras] Retrying after traffic delay..."
             )
 
-            elapsed = round(time.time() - start, 2)
+            time.sleep(3)
 
-            answer = r.choices[0].message.content.strip()
+            try:
 
-            tokens = r.usage.completion_tokens
+                r = client.chat.completions.create(
+                    model=MODEL_ID,
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": prompt
+                        }
+                    ],
+                    max_tokens=400,
+                    temperature=0.3,
+                )
 
-            return {
-                "answer": answer,
-                "model": MODEL_NAME,
-                "time_s": elapsed,
-                "tokens": tokens
-            }
+                elapsed = round(time.time() - start, 2)
+                answer = r.choices[0].message.content.strip()
+                tokens = r.usage.completion_tokens
 
-        except:
-            pass
+                return {
+                    "answer": answer,
+                    "model": MODEL_NAME,
+                    "time_s": elapsed,
+                    "tokens": tokens
+                }
 
-    print(f"  [{MODEL_NAME}] ERROR: {e}")
+            except Exception as retry_error:
 
-    return None
+                print(
+                    f"  [{MODEL_NAME}] RETRY ERROR: "
+                    f"{retry_error}"
+                )
+
+        return None

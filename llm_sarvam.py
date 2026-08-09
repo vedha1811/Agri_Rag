@@ -8,9 +8,9 @@ client = OpenAI(
     base_url="https://api.sarvam.ai/v1"
 )
 
-MODEL_ID = "sarvam-m"
+MODEL_ID = "sarvam-105b"
 
-MODEL_NAME = "Sarvam-M"
+MODEL_NAME = "Sarvam-105B"
 
 def generate_answer(query, context_chunks):
 
@@ -48,20 +48,27 @@ ANSWER:
         start = time.time()
 
         r = client.chat.completions.create(
-            model=MODEL_ID,
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt
-                }
+           model=MODEL_ID,
+           messages=[
+               {
+                 "role": "user",
+                 "content": prompt
+               }
             ],
-            max_tokens=400,
-            temperature=0.3
+           max_tokens=400,
+           temperature=0.3,
+           reasoning_effort=None
         )
 
         elapsed = round(time.time() - start, 2)
 
-        answer = r.choices[0].message.content.strip()
+        message = r.choices[0].message
+
+        if message.content:
+           answer = message.content.strip()
+        else:
+           print(f"  [{MODEL_NAME}] No final content returned")
+           return None
 
         tokens = r.usage.completion_tokens
 

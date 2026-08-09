@@ -49,7 +49,6 @@ import llm_groq
 import llm_cohere
 import llm_sarvam
 import llm_cerebras
-import llm_sambanova
 
 
 # =========================================================
@@ -72,7 +71,7 @@ LLM_MAP = {
     "cohere-command": llm_cohere,
     "sarvam-ai": llm_sarvam,
     "cerebras-llama": llm_cerebras,
-    "sambanova-llama": llm_sambanova,
+
 }
 
 
@@ -81,7 +80,7 @@ BEST_MODELS = [
     ("cerebras-llama", llm_cerebras),
     ("cohere-command", llm_cohere),
     ("sarvam-ai", llm_sarvam),
-    ("sambanova-llama", llm_sambanova),
+
 ]
 
 

@@ -26,13 +26,11 @@ MODELS = {
         "Command-R (Cohere)",
 
     "sarvam-ai":
-        "Sarvam-M (Sarvam AI)",
+         "Sarvam-105B (Sarvam AI)",
 
     "cerebras-llama":
-        "LLaMA 3.1 8B (Cerebras)",
+        "GPT-OSS 120B (Cerebras)",
 
-    "sambanova-llama":
-        "LLaMA 3.1 8B (Sambanova)",
 }
 
 DEFAULT_MODEL = "auto"
